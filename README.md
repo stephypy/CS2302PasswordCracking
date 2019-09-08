@@ -1,11 +1,11 @@
 # CS2302: PasswordCracking
 CS 2302 Data Structures: MW 1:30PM - 2:50PM <br />
-Author: Stephanie Galvan <br />
-Assignment: Lab 1 - Password Cracking <br />
-Instructor: Diego Aguirre <br />
-TA: Gerardo <br />
-Date of last modification: September 8, 2019 <br />
-Purpose: Given a file containing users, salt values, and hashed passwords, create a recursive method that uses brute force to generate all users passwords. <br />
+**Author:** Stephanie Galvan <br />
+**Assignment:** Lab 1 - Password Cracking <br />
+**Instructor:** Diego Aguirre <br />
+**TA:** Gerardo <br />
+**Date of last modification:** September 8, 2019 <br />
+**Purpose:** Given a file containing users, salt values, and hashed passwords, create a recursive method that uses brute force to generate all users passwords. <br />
 
 (From lab description): <br />
   *The file is divided as username,salt value, hashed password <br />
