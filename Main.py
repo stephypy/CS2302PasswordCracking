@@ -19,7 +19,7 @@ def hash_with_sha256(str):
 def hack_password(pass_length):
     # Check parameter's data type
     if not isistance(pass_length, int):
-      print('Invalid data type: Only pass integers between 3 and 7 (inclusive))
+      print('Invalid data type: Only pass integers between 3 and 7 (inclusive)')
       return
     # Password will be at least 3 digits long and at most 7 digits long
     if pass_length < 3 or pass_length > 7:
@@ -35,7 +35,7 @@ def hack_password(pass_length):
                 curr_num = ''.join(i)
                 hashline = hash_with_sha256(curr_num + str(elements[1]))
                 if hashline == hash_element:
-                    print(digits)
+                    print(curr_num)
                     print(elements[0])
                     print('')
     hack_password(pass_length + 1)
@@ -45,7 +45,7 @@ def test_cases():
     # Pass a higher parameter than expected:
     hack_password(8)
     
-    #Pass a lower paramer than expected:
+    #Pass a lower parameter than expected:
     hack_password(0)
     
     #Pass an invalid parameter i.e.: a string, boolean, etc
