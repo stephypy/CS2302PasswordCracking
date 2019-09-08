@@ -1,4 +1,4 @@
-# CS2302PasswordCracking
+# CS2302: PasswordCracking
 CS 2302 Data Structures: MW 1:30PM - 2:50PM <br />
 Author: Stephanie Galvan <br />
 Assignment: Lab 1 - Password Cracking <br />
