@@ -17,10 +17,10 @@ CS 2302 Data Structures: MW 1:30PM - 2:50PM <br />
   
   Discuss- Time Complexity: <br />
    Since this program is meant to use brute force to find passwords from a file, there are four main concerns: <br />
-    1. Calculation of combinations
-    2. Nested for loops
-    3. Calling an additional method
-    4. Recursive call
+    1. ItemCalculation of combinations
+    2. ItemNested for loops
+    3. ItemCalling an additional method
+    4. ItemRecursive call
     However, it is possible to determine the best and worst cases of the program: <br />
     1. Best cases:
      * When an invalid parameter is passed (because the program will immeadiately return and end the function) <br />
