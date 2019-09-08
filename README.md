@@ -30,7 +30,7 @@
      Second call (parameter = 4): [10! * 10! * 10! * 10!] * 100 <br />
      Third call (parameter = 5): [10! * 10! * 10! * 10! * 10!] * 100 <br />
      Fourth call (parameter = 6): [10! * 10! * 10! * 10! * 10! * 10!] * 100 <br /> 
-     Last call (parameter = 6): [10! * 10! * 10! * 10! * 10! * 10! * 10!] * 100 <br />*
+     Last call (parameter = 7): [10! * 10! * 10! * 10! * 10! * 10! * 10!] * 100 <br />*
      The addition of the numbers above refer to the total number of needed iterations
  
      
