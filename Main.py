@@ -17,16 +17,17 @@ def hash_with_sha256(str):
 
 
 def hack_password(pass_length):
+    # Create all the possible combinations of the following digits of n length
+    num_combination = list(itertools.product(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], repeat=pass_length))
+    # List that will contain corresponding passwords for users
+    passwords = []
     # Check parameter's data type
     if not isinstance(pass_length, int):
       print('Invalid data type: Only pass integers between 3 and 7 (inclusive)')
       return
     # Password will be at least 3 digits long and at most 7 digits long
     if pass_length < 3 or pass_length > 7:
-        print('Invalid starting password length: Make sure length is between 3 and 7 (inclusive)')
-        return
-    # Create all the possible combinations of the following digits of n length
-    num_combination = list(itertools.product(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], repeat=pass_length))
+        return passwords.sort
     for i in num_combination:
         with open("password_file.txt") as f:
             for curr_line in f:
@@ -35,10 +36,8 @@ def hack_password(pass_length):
                 curr_num = ''.join(i)
                 hashline = hash_with_sha256(curr_num + str(elements[1]))
                 if hashline == hash_element:
-                    print(curr_num)
-                    print(elements[0])
-                    print('')
-    hack_password(pass_length + 1)
+                    passwords.append(elements[0] + ': ' + curr_num)
+    passwords += hack_password(pass_length + 1)
 
 
 def test_cases():
