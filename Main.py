@@ -22,14 +22,15 @@ def hack_password(pass_length):
     passwords = []
     # Check parameter's data type
     if not isinstance(pass_length, int):
-      print('Invalid data type: Only pass integers between 3 and 7 (inclusive)')
-      return
+        print('Invalid data type: Only pass integers between 3 and 7 (inclusive)')
+        return
     # Password will be at least 3 digits long and at most 7 digits long
     if pass_length < 3 or pass_length > 7:
         passwords.sort()
         return passwords
     # Create all the possible combinations of the following digits of n length
     num_combination = list(itertools.product(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], repeat=pass_length))
+    # Keep count of the file lines
     count = 0
     # It will iterate each num_combination of length pass_length through each line in the file
     for i in num_combination:
