@@ -3,7 +3,7 @@
 **Author:** Stephanie Galvan <br />
 **Assignment:** Lab 1 - Password Cracking <br />
 **Instructor:** Diego Aguirre <br />
-**TA:** Gerardo <br />
+**TA:** Gerardo Barraza <br />
 **Date of last modification:** September 9, 2019 <br />
 **Purpose:** Given a file containing users, salt values, and hashed passwords, create a recursive method that uses brute force to generate all users passwords. <br />
 
